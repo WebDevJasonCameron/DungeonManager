@@ -4,6 +4,7 @@ import java.util.List;
 
 public class Dungeon {
 
+    // VARs
     private int id;
     private String name;
     private String theme;           //   Whether classic with traps and monsters, a crypt, a castle, a cave, etc
@@ -13,17 +14,21 @@ public class Dungeon {
     private String size;            //   Small, medium, or large Dungeon? Can affect the time required to explore it
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
-
+    private String status;          //   Currently open, closed for maintenance, or undergoing renovations
     private int challengeRating;    //   Difficulty or appeal to adventurers
     private int popularityRating;   //   Feedback & ratings provided by adventurers
     private int recommendedLevel;   //   Level or experience range for adventurers
 
-    private String status;          //   Currently open, closed for maintenance, or undergoing renovations
+    // OBJs
+    private Budget budget;
 
+    // LISTs
     private List<Room> rooms;       //   The list of rooms
     private List<Staff> staff;      //   Staff that support the Dungeon
     private List<Manager> managers; //   Middle management that manage the Staff
     private List<Owner> owners;     //   VIPs in charge of the overall business
+    private List<Event> events;     //   Conferences
+
 
 
     /**

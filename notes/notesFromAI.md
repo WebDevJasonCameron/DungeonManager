@@ -32,6 +32,7 @@ Gpt:
 
 > This feature can also be monetized, as you can charge entry fees or offer premium event packages to generate in-game revenue, further enhancing the financial aspects of dungeon management.
 
+---
 
 ### 2023 11 05 | Readme & Model Help
 Me: 
@@ -114,3 +115,5 @@ Gpt:
 > Owner/Creator: Information about the game master or creator of the dungeon.
 
 > By tracking these additional details, you can create a rich and dynamic experience for adventurers and ensure that your DungeonMaster application provides comprehensive information to game masters looking to integrate your dungeons into their campaigns. This data will also help players choose the dungeons that best fit their preferences and characters
+
+
