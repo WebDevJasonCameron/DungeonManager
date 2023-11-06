@@ -24,4 +24,12 @@ public class Dungeon {
     private List<Staff> staff;      //   Staff that support the Dungeon
     private List<Manager> managers; //   Middle management that manage the Staff
     private List<Owner> owners;     //   VIPs in charge of the overall business
+
+
+    /**
+     * Other Items
+     * List of loot
+     * Budget type stuff  --> Budget Class
+     *
+     */
 }
