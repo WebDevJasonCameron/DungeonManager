@@ -21,5 +21,7 @@ public class Dungeon {
     private String status;          //   Currently open, closed for maintenance, or undergoing renovations
 
     private List<Room> rooms;       //   The list of rooms
-    private List<Monster> staff;    //   Monsters that support the Dungeon
+    private List<Staff> staff;      //   Staff that support the Dungeon
+    private List<Manager> managers; //   Middle management that manage the Staff
+    private List<Owner> owners;     //   VIPs in charge of the overall business
 }

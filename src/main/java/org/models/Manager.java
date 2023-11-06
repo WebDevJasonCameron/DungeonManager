@@ -1,4 +1,4 @@
 package org.models;
 
-public class Monster {
+public class Manager {
 }
