@@ -35,6 +35,12 @@ public class Dungeon {
     // CONs
     public Dungeon(){}
 
+    public Dungeon(String name, String size, String status) {
+        this.name = name;
+        this.size = size;
+        this.status = status;
+    }
+
     public Dungeon(int id, String name, String theme, String lore, String description, String location, String size, String creator, String entranceFee, String status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
