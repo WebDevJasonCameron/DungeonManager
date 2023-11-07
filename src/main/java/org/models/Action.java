@@ -1,4 +1,4 @@
 package org.models;
 
-public class Skill {
+public class Action {
 }
