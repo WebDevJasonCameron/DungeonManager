@@ -6,15 +6,24 @@ public class CharacterSheet {
 
     // VARs
     private String creatureName;    //   Meta
-    private String size;
+    private String source;
+
+    private String size;            //   Creature Descriptions
     private String creatureType;
     private int armorClass;
     private int hitPoints;
+    private double challengeRank;
+    private int xp;
+    private int proficiencyBonus;
+    private boolean multiAttack;
+    private String Description;
+
     private int walkSpeed;          //   Movements
     private int flySpeed;
     private int swimSpeed;
     private int climbSpeed;
     private int stealthSpeed;
+
     private int str;                //   Abilities
     private int strMod;
     private int dex;
@@ -27,13 +36,6 @@ public class CharacterSheet {
     private int wisMod;
     private int cha;
     private int chaMod;
-    private double challengeRank;
-    private int xp;
-    private int proficiencyBonus;
-    private boolean multiAttack;
-    private String Description;
-    private String source;
-
 
     // LISTs
     private List<DamageImmunities> damageImmunities;
