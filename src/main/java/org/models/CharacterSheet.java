@@ -5,28 +5,28 @@ import java.util.List;
 public class CharacterSheet {
 
     // VARs
-    private String creatureName;
+    private String creatureName;    //   Meta
     private String size;
     private String creatureType;
     private int armorClass;
     private int hitPoints;
-    private int walkSpeed;
+    private int walkSpeed;          //   Movements
     private int flySpeed;
     private int swimSpeed;
     private int climbSpeed;
     private int stealthSpeed;
-        private int str;
-        private int strMod;
-        private int dex;
-        private int dexMod;
-        private int con;
-        private int conMod;
-        private int intel;
-        private int intelMod;
-        private int wis;
-        private int wisMod;
-        private int cha;
-        private int chaMod;
+    private int str;                //   Abilities
+    private int strMod;
+    private int dex;
+    private int dexMod;
+    private int con;
+    private int conMod;
+    private int intel;
+    private int intelMod;
+    private int wis;
+    private int wisMod;
+    private int cha;
+    private int chaMod;
     private double challengeRank;
     private int xp;
     private int proficiencyBonus;
@@ -48,3 +48,5 @@ public class CharacterSheet {
 
 
 }
+
+
