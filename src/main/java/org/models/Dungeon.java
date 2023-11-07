@@ -31,10 +31,4 @@ public class Dungeon {
 
 
 
-    /**
-     * Other Items
-     * List of loot
-     * Budget type stuff  --> Budget Class
-     *
-     */
 }

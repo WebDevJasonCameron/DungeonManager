@@ -32,6 +32,56 @@ Gpt:
 
 > This feature can also be monetized, as you can charge entry fees or offer premium event packages to generate in-game revenue, further enhancing the financial aspects of dungeon management.
 
+#### 1800 | Manager Class
+Me:
+> I'm trying to figure out what type of attributes I should add to each class in my application.  Right now I focussing on the Manager class within the application.  I can think of id, name, and story.  What else should I keep track?
+
+
+Gpt:
+> When defining attributes for the Manager class in your DungeonMaster application, it's important to include information that's relevant to the role and responsibilities of a dungeon manager. Here are some additional attributes you might want to consider:
+> 1. Contact Information:
+> - Email: To contact the manager. 
+> - Phone Number: In case there are urgent matters or notifications. 
+> 2. Location: 
+> - Address: The physical or in-game location of the dungeon management office or headquarters.
+> 3. Title/Rank:
+> - The manager's official title or rank within the organization. 
+> 4. Bio/Background:
+> - A detailed background story for the manager. This could add depth to the character and provide context for their role. 
+> 5. Skills and Abilities:
+> - List any unique skills, magical abilities, or attributes that the manager possesses. These may come into play during certain in-game events or interactions.
+> 6. Manager's Avatar/Profile Picture:
+> - Allow the manager to choose or upload an avatar or profile picture that represents their in-game character. 
+> 7. Dungeon Portfolio:
+> - A list of dungeons managed by the character, along with key information about each dungeon. 
+> 8. Inventory and Equipment:
+> - Track any items, equipment, or resources the manager possesses. This can include tools, magical items, or items of personal significance. 
+> 9. Relationships:
+> - Record relationships with other NPCs or adventurers within the game. This can influence interactions and quests. 
+> 10. Account and Finance:
+> - Keep track of the manager's in-game finances, including current funds, assets, and expenses. 
+> 11. Calendar/Schedule:
+> - An in-game calendar that tracks the manager's schedule, including events and dungeon management tasks.
+> 12. Adventurer Reviews:
+> - A log of reviews and feedback provided by adventurers who have explored the manager's dungeons. 
+> 13. Notes and Comments:
+> - A place to add notes, comments, or reminders related to dungeon management. 
+> 14. Quests and Objectives:
+> - ist any ongoing quests or objectives that the manager is working on. This can serve as a to-do list.
+> 15. Achievements and Progress:
+> - Track the manager's achievements and overall progress in the game. 
+> 16. Social Connections:
+> - Friendships, alliances, or rivalries with other managers, NPCs, or adventurer groups.
+
+> Remember that the attributes you include should serve the purpose of your game and align with the role and narrative of the manager character. Additionally, these attributes can contribute to the manager's personal story and interactions with other in-game entities. Depending on the complexity of your game, you can add or modify attributes as needed to enhance the gameplay and storytelling experience.
+
+
+
+
+
+
+
+
 ---
 
 ### 2023 11 05 | Readme & Model Help
