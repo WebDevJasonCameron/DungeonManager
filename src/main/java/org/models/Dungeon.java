@@ -4,6 +4,7 @@ import org.constants.DungeonSize;
 import org.constants.DungeonStatus;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Dungeon {
 
@@ -196,9 +197,9 @@ public class Dungeon {
     // ===========================================================
 
     // FUNs
-    public Boolean isOpen(){
-        System.out.println(DungeonStatus.OPEN.toString().equals("open"));
-        return DungeonStatus.OPEN.toString().equals("open");
+    public boolean isOpen(){
+        System.out.println(Objects.equals(DungeonStatus.OPEN.toString(), "open"));
+        return Objects.equals(DungeonStatus.OPEN.toString(), "open");
     }
 
 

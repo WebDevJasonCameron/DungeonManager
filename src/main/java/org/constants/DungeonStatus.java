@@ -6,11 +6,10 @@ public enum DungeonStatus {
     MAINTENANCE("maintenance"),
     RENOVATING("renovating");
 
-
     private String status;
 
-    DungeonStatus(String size) {
-        this.status = size;
+    DungeonStatus(String status) {
+        this.status = status;
     }
 
     @Override
