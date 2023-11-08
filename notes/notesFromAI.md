@@ -3,6 +3,53 @@
 ## What and Why
 I believe conversations with AI using LLM can help expedite the creative process.  I spend a lot of mental time trying to figure out creative ideas, only to run dry or get burnt out when it comes time to needing that mental "juice" to figuring out how I want to build my code.  As such, I find it rewarding to ask someone for their ideas.  I don't really have a lot of people around me.  As such I use ChatGPT.  This Markdown document contains the conversations I've had.  
 
+### 2023 11 08 | Challenge Rating
+Me:
+> Is there a challenge rating for dungeons in DnD?  If so, can you list them and provide an explanation for each rating?
+
+Gpt:
+> In Dungeons & Dragons (D&D), there is a system for determining the challenge rating (CR) of creatures, but not specifically for dungeons as a whole. However, the concept of challenge rating can be applied to individual encounters and elements within a dungeon, helping Dungeon Masters (DMs) balance encounters and create appropriate challenges for the players.
+
+> Here is a brief explanation of the challenge rating system for creatures in D&D:
+> 1. Challenge Rating (CR):** Challenge Rating is a numerical value assigned to creatures and NPCs in D&D. It represents the difficulty of defeating that creature in combat. The CR indicates the level of threat a creature poses to a party of adventurers. The higher the CR, the more challenging the encounter.
+> 2. CR 0:** These creatures are typically harmless or very weak, posing little to no threat to adventurers. Common examples include basic animals, such as a house cat or a commoner. 
+> 3. CR 1/8:** Slightly more challenging than CR 0, these creatures may have a few abilities or low-level combat potential. Examples include weak goblins or kobolds.
+> 4. CR 1/4:** Still relatively weak, CR 1/4 creatures might have minor special abilities or slightly better combat capabilities. Examples include giant rats or tribal warriors.
+> 5. CR 1/2:** CR 1/2 creatures are more formidable and can present a moderate challenge to low-level adventurers. Examples include cultists, thugs, or dire wolves.
+> 6. CR 1:** These creatures are moderately powerful and can be a serious challenge for lower-level parties. Examples include ogres, veterans, or manticores.
+> 7. CR 2:** CR 2 creatures are significantly more dangerous and can pose a significant threat to a party of adventurers. Examples include trolls, cyclopes, or chimeras.
+> 8. CR 3:** These creatures are even more powerful and can be challenging for mid-level parties. Examples include wyverns, hill giants, or medusas.
+> 9. CR 4:** CR 4 creatures are formidable and can be a significant challenge for mid-level to high-level parties. Examples include mummies, wights, or basilisks.
+> 10. CR 5 and above:** As the CR increases beyond 4, creatures become progressively more powerful and present a significant challenge to high-level parties. Examples include dragons, demons, and other legendary creatures.
+
+> It's important to note that when designing a dungeon in D&D, the DM considers the combined challenge ratings of all encounters, traps, puzzles, and other elements within the dungeon to ensure that the overall experience is balanced and engaging for the party of adventurers. The DM may use the encounter-building guidelines provided in the D&D rulebooks to achieve this balance.
+
+Me:
+> nice but I was actually looking for a challenge rating for the different types of dungeons in DnD.  I was thinking the rating could correspond with what level adventurer should attempt the dungeon.  If there isn't, could you make one up?
+
+Gpt:
+> Dungeons in Dungeons & Dragons (D&D) typically don't have official challenge ratings like creatures do. However, you can certainly create your own system for rating dungeons to correspond with the level of adventurers who should attempt them. Here's a sample rating system for different types of dungeons based on adventurer levels:
+
+> 1. Dungeon Challenge Rating (DCR) 1-3:** These are beginner-level dungeons suitable for low-level adventurers (Levels 1-3). They often contain straightforward puzzles, simple traps, and weaker monsters, making them accessible for novice adventurers.
+> 
+> 2. DCR 4-6:** Intermediate-level dungeons designed for adventurers at Levels 4-6. These dungeons may feature more complex puzzles, moderate traps, and slightly tougher monsters. They offer a stepping stone for characters looking to challenge themselves further.
+> 
+> 3. DCR 7-9:** Intermediate to advanced dungeons for adventurers at Levels 7-9. These dungeons can include intricate puzzles, challenging traps, and formidable monsters. They require a higher level of skill and experience.
+> 
+> 4. DCR 10-12:** Advanced dungeons for high-level adventurers (Levels 10-12). These dungeons are quite challenging, with complex puzzles, deadly traps, and powerful foes. Only experienced adventurers should attempt them.
+> 
+> 5. DCR 13-15:** High-level dungeons for adventurers at Levels 13-15. These dungeons are designed for characters who are nearing the pinnacle of their power. They feature intricate puzzles, deadly traps, and formidable bosses.
+> 
+> 6. DCR 16-20:** Epic dungeons for characters at Levels 16-20. These dungeons are the most challenging and are typically filled with highly intelligent foes, intricate puzzles, and deadly traps. Only the most powerful adventurers should attempt these.
+> 
+> 7. DCR Special:** Special dungeons that don't fit into the standard categories. These dungeons might have unique qualities, such as temporal distortions, interdimensional travel, or bizarre themes that don't follow the traditional DCR rating system.
+
+> Remember that this rating system is just a guideline and can be adapted to fit the specific needs of your DungeonMaster application and the D&D campaign you're running. You can use these ratings to help players choose dungeons that align with their characters' abilities and challenges they're seeking.
+
+
+
+---
+
 ### 2023 11 07 | Dungeon Size
 Me:
 > I am curious to know, what are the standard sizes for TTRPG dungeons.  Can you give me a list of the standard dungeon sizes using room count or something?

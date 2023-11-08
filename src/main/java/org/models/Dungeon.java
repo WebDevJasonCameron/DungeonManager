@@ -13,7 +13,7 @@ public class Dungeon {
     private String name;
     private String theme;           //   Whether classic with traps and monsters, a crypt, a castle, a cave, etc
     private String lore;            //   The history and background story of the Dungeon
-    private String description;     //   Its history and any significant features that make it unique
+    private String description;     //   Significant features that make it unique
     private String location;        //   In-game world or region where it is located
     private DungeonSize size;
     private String creator;         //   Information about the game master or creator of the Dungeon

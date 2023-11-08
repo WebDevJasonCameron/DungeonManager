@@ -6,7 +6,7 @@ public enum DungeonStatus {
     MAINTENANCE("maintenance"),
     RENOVATING("renovating");
 
-    private String status;
+    private final String status;
 
     DungeonStatus(String status) {
         this.status = status;

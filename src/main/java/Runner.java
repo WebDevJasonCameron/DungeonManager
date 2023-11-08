@@ -12,21 +12,10 @@ public class Runner {
     public static void main(String[] args) {
         Dungeon smashHouse, iceCave, vampireCastle, pinkDisco;
 
-        smashHouse = new Dungeon("Smash House",
-                                    DungeonSize.LARGE,
-                                    DungeonStatus.OPEN);
-
-        iceCave = new Dungeon("Ice Cave",
-                                    DungeonSize.MEDIUM,
-                                    DungeonStatus.OPEN);
-
-        vampireCastle = new Dungeon("Van Stoker Caste",
-                                    DungeonSize.EXTRA_LARGE,
-                                    DungeonStatus.CLOSED);
-
-        pinkDisco = new Dungeon("Pink Disco",
-                                    DungeonSize.MINI,
-                                    DungeonStatus.RENOVATING);
+        smashHouse = new Dungeon("Smash House", DungeonSize.LARGE, DungeonStatus.OPEN);
+        iceCave = new Dungeon("Ice Cave", DungeonSize.MEDIUM, DungeonStatus.OPEN);
+        vampireCastle = new Dungeon("Van Stoker Caste", DungeonSize.EXTRA_LARGE, DungeonStatus.CLOSED);
+        pinkDisco = new Dungeon("Pink Disco", DungeonSize.MINI, DungeonStatus.RENOVATING);
 
         List<Dungeon> dungeons = new ArrayList<>(Arrays.asList(smashHouse,iceCave,vampireCastle, pinkDisco));
 

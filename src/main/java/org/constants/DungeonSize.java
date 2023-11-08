@@ -9,7 +9,7 @@ public enum DungeonSize {
     GIGANTIC("gigantic"),               //   Continent
     ULTRA("ultra");                     //   World
 
-    private String size;
+    private final String size;
 
     DungeonSize(String size) {
         this.size = size;
