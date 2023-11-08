@@ -18,7 +18,7 @@ public class Dungeon {
     private DungeonSize size;
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
-    private static DungeonStatus status;
+    private DungeonStatus status;
     private int challengeRating;    //   Difficulty or appeal to adventurers
     private int popularityRating;   //   Feedback & ratings provided by adventurers
     private int recommendedLevel;   //   Level or experience range for adventurers
@@ -196,10 +196,9 @@ public class Dungeon {
 
     // ===========================================================
 
-    // FUNs
+    // METHs
     public boolean isOpen(){
-        System.out.println(Objects.equals(DungeonStatus.OPEN.toString(), "open"));
-        return Objects.equals(DungeonStatus.OPEN.toString(), "open");
+        return DungeonStatus.OPEN == this.status;
     }
 
 
