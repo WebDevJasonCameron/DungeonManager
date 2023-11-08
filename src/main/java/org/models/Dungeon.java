@@ -1,5 +1,8 @@
 package org.models;
 
+import org.constants.DungeonSize;
+import org.constants.DungeonStatus;
+
 import java.util.List;
 
 public class Dungeon {
@@ -11,10 +14,10 @@ public class Dungeon {
     private String lore;            //   The history and background story of the Dungeon
     private String description;     //   Its history and any significant features that make it unique
     private String location;        //   In-game world or region where it is located
-    private String size;            //   Small, medium, or large Dungeon
+    private DungeonSize size;
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
-    private String status;          //   Currently open, closed for maintenance, or undergoing renovations
+    private static DungeonStatus status;
     private int challengeRating;    //   Difficulty or appeal to adventurers
     private int popularityRating;   //   Feedback & ratings provided by adventurers
     private int recommendedLevel;   //   Level or experience range for adventurers
@@ -30,18 +33,18 @@ public class Dungeon {
     private List<Owner> owners;     //   VIPs in charge of the overall business
     private List<Event> events;     //   Conferences <!> Add later
 
-
+    // ===========================================================
 
     // CONs
     public Dungeon(){}
 
-    public Dungeon(String name, String size, String status) {
+    public Dungeon(String name, DungeonSize size, DungeonStatus status) {
         this.name = name;
         this.size = size;
         this.status = status;
     }
 
-    public Dungeon(int id, String name, String theme, String lore, String description, String location, String size, String creator, String entranceFee, String status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
@@ -84,7 +87,7 @@ public class Dungeon {
     public String getLocation() {
         return location;
     }
-    public String getSize() {
+    public DungeonSize getSize() {
         return size;
     }
     public String getCreator() {
@@ -93,7 +96,7 @@ public class Dungeon {
     public String getEntranceFee() {
         return entranceFee;
     }
-    public String getStatus() {
+    public DungeonStatus getStatus() {
         return status;
     }
     public int getChallengeRating() {
@@ -147,7 +150,7 @@ public class Dungeon {
     public void setLocation(String location) {
         this.location = location;
     }
-    public void setSize(String size) {
+    public void setSize(DungeonSize size) {
         this.size = size;
     }
     public void setCreator(String creator) {
@@ -156,7 +159,7 @@ public class Dungeon {
     public void setEntranceFee(String entranceFee) {
         this.entranceFee = entranceFee;
     }
-    public void setStatus(String status) {
+    public void setStatus(DungeonStatus status) {
         this.status = status;
     }
     public void setChallengeRating(int challengeRating) {
@@ -189,4 +192,14 @@ public class Dungeon {
     public void setEvents(List<Event> events) {
         this.events = events;
     }
+
+    // ===========================================================
+
+    // FUNs
+    public Boolean isOpen(){
+        System.out.println(DungeonStatus.OPEN.toString().equals("open"));
+        return DungeonStatus.OPEN.toString().equals("open");
+    }
+
+
 }

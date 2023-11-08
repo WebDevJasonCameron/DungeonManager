@@ -3,6 +3,33 @@
 ## What and Why
 I believe conversations with AI using LLM can help expedite the creative process.  I spend a lot of mental time trying to figure out creative ideas, only to run dry or get burnt out when it comes time to needing that mental "juice" to figuring out how I want to build my code.  As such, I find it rewarding to ask someone for their ideas.  I don't really have a lot of people around me.  As such I use ChatGPT.  This Markdown document contains the conversations I've had.  
 
+### 2023 11 07 | Dungeon Size
+Me:
+> I am curious to know, what are the standard sizes for TTRPG dungeons.  Can you give me a list of the standard dungeon sizes using room count or something?
+
+Gpt:
+> There are no strict "standard" sizes for tabletop role-playing game (TTRPG) dungeons, as they can vary widely depending on the game system, the adventure's narrative, and the preferences of the Game Master (GM) and players. However, I can provide you with a general guideline for dungeon sizes based on the number of rooms or areas. Keep in mind that these are rough estimates, and the actual size and complexity of a dungeon can vary greatly. 
+> 1. Small Dungeon: 1-5 rooms 
+> - This is a compact dungeon suitable for a short adventure or a single encounter. It might include an entrance chamber, one or two challenge rooms, and a final encounter room. 
+> 2. Medium Dungeon: 6-15 rooms 
+> - A medium-sized dungeon can accommodate a series of challenges and encounters. It could have multiple branching paths, traps, and puzzles, as well as a mix of combat and non-combat encounters.
+> 3. Large Dungeon: 16-30 rooms 
+> - Large dungeons are more expansive and often have multiple levels or a complex layout. They may include a mix of environments, such as caves, catacombs, or hidden chambers. These dungeons can be the focus of an entire gaming session or even a multi-session adventure. 
+> 4. Massive Dungeon: 31+ rooms 
+> - Massive dungeons can be sprawling and may take several gaming sessions to explore fully. They often have intricate storytelling, deep lore, and a wide variety of challenges. These dungeons can be the centerpiece of a campaign arc. 
+> 5. Mini-Dungeon: 1-3 rooms 
+> - Mini-dungeons are very small and are typically designed for quick encounters or as side quests within a larger adventure. They can be used to add variety to the main storyline or to provide optional content.
+
+> It's important to tailor the size and complexity of a dungeon to the needs and expectations of your gaming group. Some players enjoy intricate, sprawling dungeons with many rooms, while others prefer shorter, focused experiences. Additionally, the game system you're using may have specific guidelines for dungeon design, so it's a good idea to consult the rules and adapt them to your needs.
+
+
+
+
+
+
+
+---
+
 ### 2023 11 06 | Cont Conv.
 Me:
 > This works very well.  I also know hotels often have events like business conferences or weddings.  How could we incorporate event management into this dungeon management application?  Do you have any ideas?
