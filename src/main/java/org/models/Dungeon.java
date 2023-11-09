@@ -1,7 +1,9 @@
 package org.models;
 
+import org.constants.enums.DungeonChallengeRatingEnum;
 import org.constants.enums.DungeonSizeEnum;
 import org.constants.enums.DungeonStatusEnum;
+import org.constants.explainer.DungeonChallengeRatingExplainer;
 
 import java.util.List;
 
@@ -18,7 +20,7 @@ public class Dungeon {
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
     private DungeonStatusEnum status;
-    private int challengeRating;    //   Difficulty or appeal to adventurers
+    private DungeonChallengeRatingEnum challengeRating;
     private int popularityRating;   //   Feedback & ratings provided by adventurers
     private int recommendedLevel;   //   Level or experience range for adventurers
     private String source;          //   Where this dungeon info actually comes from
@@ -38,13 +40,14 @@ public class Dungeon {
     // CONs
     public Dungeon(){}
 
-    public Dungeon(String name, DungeonSizeEnum size, DungeonStatusEnum status) {
+    public Dungeon(String name, DungeonSizeEnum size, DungeonStatusEnum status, DungeonChallengeRatingEnum challengeRating) {
         this.name = name;
         this.size = size;
         this.status = status;
+        this.challengeRating = challengeRating;
     }
 
-    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSizeEnum size, String creator, String entranceFee, DungeonStatusEnum status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSizeEnum size, String creator, String entranceFee, DungeonStatusEnum status, DungeonChallengeRatingEnum challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
@@ -99,7 +102,7 @@ public class Dungeon {
     public DungeonStatusEnum getStatus() {
         return status;
     }
-    public int getChallengeRating() {
+    public DungeonChallengeRatingEnum getChallengeRating() {
         return challengeRating;
     }
     public int getPopularityRating() {
@@ -162,7 +165,7 @@ public class Dungeon {
     public void setStatus(DungeonStatusEnum status) {
         this.status = status;
     }
-    public void setChallengeRating(int challengeRating) {
+    public void setChallengeRating(DungeonChallengeRatingEnum challengeRating) {
         this.challengeRating = challengeRating;
     }
     public void setPopularityRating(int popularityRating) {
@@ -198,6 +201,11 @@ public class Dungeon {
     // METHs
     public boolean isOpen(){
         return DungeonStatusEnum.OPEN == this.status;
+    }
+
+    public String dcrExplainer(){
+        DungeonChallengeRatingExplainer dcrExplainer = new DungeonChallengeRatingExplainer();
+        return dcrExplainer.explainer(this.challengeRating);
     }
 
 
