@@ -3,7 +3,7 @@ package org.models;
 import org.constants.enums.DungeonChallengeRatingEnum;
 import org.constants.enums.DungeonSizeEnum;
 import org.constants.enums.DungeonStatusEnum;
-import org.constants.explainer.DungeonChallengeRatingExplainer;
+import org.constants.explainers.DungeonExplainers;
 
 import java.util.List;
 
@@ -12,7 +12,8 @@ public class Dungeon {
     // VARs
     private int id;
     private String name;
-    private String theme;           //   Whether classic with traps and monsters, a crypt, a castle, a cave, etc
+    private String theme;           //   Refers to the overarching style or atmosphere of the dungeon
+    private String type;            //   Relates to the purpose and function of the dungeon
     private String lore;            //   The history and background story of the Dungeon
     private String description;     //   Significant features that make it unique
     private String location;        //   In-game world or region where it is located
@@ -203,9 +204,11 @@ public class Dungeon {
         return DungeonStatusEnum.OPEN == this.status;
     }
 
+
+    // <F> Explainers
     public String dcrExplainer(){
-        DungeonChallengeRatingExplainer dcrExplainer = new DungeonChallengeRatingExplainer();
-        return dcrExplainer.explainer(this.challengeRating);
+        DungeonExplainers dcrExplain = new DungeonExplainers();
+        return dcrExplain.challengeRating(this.challengeRating);
     }
 
 

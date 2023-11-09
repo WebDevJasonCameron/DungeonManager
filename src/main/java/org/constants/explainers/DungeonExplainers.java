@@ -1,10 +1,11 @@
-package org.constants.explainer;
+package org.constants.explainers;
 
 import org.constants.enums.DungeonChallengeRatingEnum;
+import org.constants.enums.DungeonSizeEnum;
 
-public class DungeonChallengeRatingExplainer {
+public class DungeonExplainers {
 
-    public String explainer(DungeonChallengeRatingEnum dcr){
+    public String challengeRating(DungeonChallengeRatingEnum dcr){
         switch (dcr){
             case DCR_1_3 -> {
                 return "These are beginner-level dungeons suitable for low-level " +
@@ -56,5 +57,32 @@ public class DungeonChallengeRatingExplainer {
         }
     }
 
-
+    public String size(DungeonSizeEnum size){
+        switch (size){
+            case MINI -> {
+                return "1-3 rooms";
+            }
+            case SMALL -> {
+                return "4-5 rooms";
+            }
+            case MEDIUM -> {
+                return "6-15 rooms";
+            }
+            case LARGE -> {
+                return "16-30 rooms";
+            }
+            case EXTRA_LARGE -> {
+                return "31+ rooms";
+            }
+            case GIGANTIC -> {
+                return "Continent";
+            }
+            case ULTRA -> {
+                return "World";
+            }
+            default -> {
+                return "Unknown Dimensions";
+            }
+        }
+    }
 }

@@ -1,7 +1,6 @@
 import org.constants.enums.DungeonChallengeRatingEnum;
 import org.constants.enums.DungeonSizeEnum;
 import org.constants.enums.DungeonStatusEnum;
-import org.constants.explainer.DungeonChallengeRatingExplainer;
 import org.models.Dungeon;
 
 import java.util.ArrayList;
@@ -31,7 +30,9 @@ public class Runner {
 
         List<Dungeon> dungeons = new ArrayList<>(Arrays.asList(smashHouse,iceCave,vampireCastle, pinkDisco));
 
-        System.out.println(vampireCastle.dcrExplainer());
-
+        for (Dungeon dungeon : dungeons){
+            System.out.println(dungeon.dcrExplainer());
+            System.out.println("\n------\n");
+        }
     }
 }
