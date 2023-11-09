@@ -1,4 +1,5 @@
 import org.constants.enums.DungeonChallengeRating;
+import org.constants.enums.DungeonPopularityRating;
 import org.constants.enums.DungeonSize;
 import org.constants.enums.DungeonStatus;
 import org.models.Dungeon;
@@ -14,24 +15,30 @@ public class Runner {
         smashHouse = new Dungeon("Smash House",
                                     DungeonSize.LARGE,
                                     DungeonStatus.OPEN,
-                                    DungeonChallengeRating.DCR_7_9);
+                                    DungeonChallengeRating.DCR_7_9,
+                                    DungeonPopularityRating.FIVE_STARS);
         iceCave = new Dungeon("Ice Cave",
                                     DungeonSize.MEDIUM,
                                     DungeonStatus.OPEN,
-                                    DungeonChallengeRating.DCR_1_3);
+                                    DungeonChallengeRating.DCR_1_3,
+                                    DungeonPopularityRating.THREE_STARS);
         vampireCastle = new Dungeon("Van Stoker Caste",
                                     DungeonSize.EXTRA_LARGE,
                                     DungeonStatus.CLOSED,
-                                    DungeonChallengeRating.DCR_4_6);
+                                    DungeonChallengeRating.DCR_4_6,
+                                    DungeonPopularityRating.FOUR_STARS);
+
         pinkDisco = new Dungeon("Pink Disco",
                                     DungeonSize.MINI,
                                     DungeonStatus.RENOVATING,
-                                    DungeonChallengeRating.DCR_SPECIAL);
+                                    DungeonChallengeRating.DCR_SPECIAL,
+                                    DungeonPopularityRating.ONE_STARS);
 
         List<Dungeon> dungeons = new ArrayList<>(Arrays.asList(smashHouse,iceCave,vampireCastle, pinkDisco));
 
         for (Dungeon dungeon : dungeons){
-            System.out.println(dungeon.dcrExplainer());
+            System.out.println(dungeon.getName());
+            System.out.println(dungeon.getPopularityRating());
             System.out.println("\n------\n");
         }
     }

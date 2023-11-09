@@ -1,6 +1,7 @@
 package org.models;
 
 import org.constants.enums.DungeonChallengeRating;
+import org.constants.enums.DungeonPopularityRating;
 import org.constants.enums.DungeonSize;
 import org.constants.enums.DungeonStatus;
 import org.constants.explainers.DungeonExplainers;
@@ -22,7 +23,7 @@ public class Dungeon {
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
     private DungeonStatus status;
     private DungeonChallengeRating challengeRating;
-    private int popularityRating;   //   <N> Feedback & ratings provided by adventurers (Players)
+    private DungeonPopularityRating popularityRating;   //   <N> Feedback & ratings provided by adventurers (Players)
     private String source;          //   Where this dungeon info actually comes from
 
     // OBJs
@@ -40,14 +41,15 @@ public class Dungeon {
     // CONs
     public Dungeon(){}
 
-    public Dungeon(String name, DungeonSize size, DungeonStatus status, DungeonChallengeRating challengeRating) {
+    public Dungeon(String name, DungeonSize size, DungeonStatus status, DungeonChallengeRating challengeRating, DungeonPopularityRating popularityRating) {
         this.name = name;
         this.size = size;
         this.status = status;
         this.challengeRating = challengeRating;
+        this.popularityRating = popularityRating;
     }
 
-    public Dungeon(int id, String name, String theme, String type, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, DungeonChallengeRating challengeRating, int popularityRating, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String type, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, DungeonChallengeRating challengeRating, DungeonPopularityRating popularityRating, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
@@ -108,7 +110,7 @@ public class Dungeon {
     public DungeonChallengeRating getChallengeRating() {
         return challengeRating;
     }
-    public int getPopularityRating() {
+    public DungeonPopularityRating getPopularityRating() {
         return popularityRating;
     }
     public String getSource() {
@@ -171,7 +173,7 @@ public class Dungeon {
     public void setChallengeRating(DungeonChallengeRating challengeRating) {
         this.challengeRating = challengeRating;
     }
-    public void setPopularityRating(int popularityRating) {
+    public void setPopularityRating(DungeonPopularityRating popularityRating) {
         this.popularityRating = popularityRating;
     }
     public void setSource(String source) {
