@@ -1,11 +1,11 @@
 package org.constants.explainers;
 
-import org.constants.enums.DungeonChallengeRatingEnum;
-import org.constants.enums.DungeonSizeEnum;
+import org.constants.enums.DungeonChallengeRating;
+import org.constants.enums.DungeonSize;
 
 public class DungeonExplainers {
 
-    public String challengeRating(DungeonChallengeRatingEnum dcr){
+    public String challengeRating(DungeonChallengeRating dcr){
         switch (dcr){
             case DCR_1_3 -> {
                 return "These are beginner-level dungeons suitable for low-level " +
@@ -57,7 +57,7 @@ public class DungeonExplainers {
         }
     }
 
-    public String size(DungeonSizeEnum size){
+    public String size(DungeonSize size){
         switch (size){
             case MINI -> {
                 return "1-3 rooms";

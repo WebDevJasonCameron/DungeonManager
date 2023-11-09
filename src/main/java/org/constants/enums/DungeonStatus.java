@@ -1,6 +1,6 @@
 package org.constants.enums;
 
-public enum DungeonStatusEnum {
+public enum DungeonStatus {
     OPEN("open"),
     CLOSED("closed"),
     MAINTENANCE("maintenance"),
@@ -8,7 +8,7 @@ public enum DungeonStatusEnum {
 
     private final String status;
 
-    DungeonStatusEnum(String status) {
+    DungeonStatus(String status) {
         this.status = status;
     }
 

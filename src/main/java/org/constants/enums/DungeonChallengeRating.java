@@ -1,6 +1,6 @@
 package org.constants.enums;
 
-public enum DungeonChallengeRatingEnum {
+public enum DungeonChallengeRating {
     DCR_1_3("DCR 1-3"),             //   These are beginner-level dungeons suitable for low-level
                                     // adventurers (Levels 1-3). They often contain straightforward
                                     // puzzles, simple traps, and weaker monsters, making them accessible
@@ -32,7 +32,7 @@ public enum DungeonChallengeRatingEnum {
 
     private final String dungeonChallengeRating;
 
-    DungeonChallengeRatingEnum(String dungeonChallengeRating) {
+    DungeonChallengeRating(String dungeonChallengeRating) {
         this.dungeonChallengeRating = dungeonChallengeRating;
     }
 

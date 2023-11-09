@@ -1,8 +1,8 @@
 package org.models;
 
-import org.constants.enums.DungeonChallengeRatingEnum;
-import org.constants.enums.DungeonSizeEnum;
-import org.constants.enums.DungeonStatusEnum;
+import org.constants.enums.DungeonChallengeRating;
+import org.constants.enums.DungeonSize;
+import org.constants.enums.DungeonStatus;
 import org.constants.explainers.DungeonExplainers;
 
 import java.util.List;
@@ -12,22 +12,21 @@ public class Dungeon {
     // VARs
     private int id;
     private String name;
-    private String theme;           //   Refers to the overarching style or atmosphere of the dungeon
-    private String type;            //   Relates to the purpose and function of the dungeon
+    private String theme;           //   <N> Refers to the overarching style or atmosphere of the dungeon
+    private String type;            //   <N> Relates to the purpose and function of the dungeon
     private String lore;            //   The history and background story of the Dungeon
     private String description;     //   Significant features that make it unique
     private String location;        //   In-game world or region where it is located
-    private DungeonSizeEnum size;
+    private DungeonSize size;
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
-    private DungeonStatusEnum status;
-    private DungeonChallengeRatingEnum challengeRating;
-    private int popularityRating;   //   Feedback & ratings provided by adventurers
-    private int recommendedLevel;   //   Level or experience range for adventurers
+    private DungeonStatus status;
+    private DungeonChallengeRating challengeRating;
+    private int popularityRating;   //   <N> Feedback & ratings provided by adventurers (Players)
     private String source;          //   Where this dungeon info actually comes from
 
     // OBJs
-    private Budget budget;
+    private Budget budget;          //   <?> Cost and expenses of running a dungeon
 
     // LISTs
     private List<Room> rooms;       //   The list of rooms
@@ -41,17 +40,18 @@ public class Dungeon {
     // CONs
     public Dungeon(){}
 
-    public Dungeon(String name, DungeonSizeEnum size, DungeonStatusEnum status, DungeonChallengeRatingEnum challengeRating) {
+    public Dungeon(String name, DungeonSize size, DungeonStatus status, DungeonChallengeRating challengeRating) {
         this.name = name;
         this.size = size;
         this.status = status;
         this.challengeRating = challengeRating;
     }
 
-    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSizeEnum size, String creator, String entranceFee, DungeonStatusEnum status, DungeonChallengeRatingEnum challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String type, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, DungeonChallengeRating challengeRating, int popularityRating, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
+        this.type = type;
         this.lore = lore;
         this.description = description;
         this.location = location;
@@ -61,7 +61,6 @@ public class Dungeon {
         this.status = status;
         this.challengeRating = challengeRating;
         this.popularityRating = popularityRating;
-        this.recommendedLevel = recommendedLevel;
         this.source = source;
         this.budget = budget;
         this.rooms = rooms;
@@ -82,6 +81,9 @@ public class Dungeon {
     public String getTheme() {
         return theme;
     }
+    public String getType() {
+        return type;
+    }
     public String getLore() {
         return lore;
     }
@@ -91,7 +93,7 @@ public class Dungeon {
     public String getLocation() {
         return location;
     }
-    public DungeonSizeEnum getSize() {
+    public DungeonSize getSize() {
         return size;
     }
     public String getCreator() {
@@ -100,17 +102,14 @@ public class Dungeon {
     public String getEntranceFee() {
         return entranceFee;
     }
-    public DungeonStatusEnum getStatus() {
+    public DungeonStatus getStatus() {
         return status;
     }
-    public DungeonChallengeRatingEnum getChallengeRating() {
+    public DungeonChallengeRating getChallengeRating() {
         return challengeRating;
     }
     public int getPopularityRating() {
         return popularityRating;
-    }
-    public int getRecommendedLevel() {
-        return recommendedLevel;
     }
     public String getSource() {
         return source;
@@ -145,6 +144,9 @@ public class Dungeon {
     public void setTheme(String theme) {
         this.theme = theme;
     }
+    public void setType(String type) {
+        this.theme = type;
+    }
     public void setLore(String lore) {
         this.lore = lore;
     }
@@ -154,7 +156,7 @@ public class Dungeon {
     public void setLocation(String location) {
         this.location = location;
     }
-    public void setSize(DungeonSizeEnum size) {
+    public void setSize(DungeonSize size) {
         this.size = size;
     }
     public void setCreator(String creator) {
@@ -163,17 +165,14 @@ public class Dungeon {
     public void setEntranceFee(String entranceFee) {
         this.entranceFee = entranceFee;
     }
-    public void setStatus(DungeonStatusEnum status) {
+    public void setStatus(DungeonStatus status) {
         this.status = status;
     }
-    public void setChallengeRating(DungeonChallengeRatingEnum challengeRating) {
+    public void setChallengeRating(DungeonChallengeRating challengeRating) {
         this.challengeRating = challengeRating;
     }
     public void setPopularityRating(int popularityRating) {
         this.popularityRating = popularityRating;
-    }
-    public void setRecommendedLevel(int recommendedLevel) {
-        this.recommendedLevel = recommendedLevel;
     }
     public void setSource(String source) {
         this.source = source;
@@ -201,7 +200,7 @@ public class Dungeon {
 
     // METHs
     public boolean isOpen(){
-        return DungeonStatusEnum.OPEN == this.status;
+        return DungeonStatus.OPEN == this.status;
     }
 
 
