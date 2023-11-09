@@ -1,14 +1,15 @@
-package org.constants;
+package org.constants.enums;
 
-public enum DungeonChallengeRating {
+public enum DungeonChallengeRatingEnum {
     DCR_1_3("DCR 1-3"),             //   These are beginner-level dungeons suitable for low-level
                                     // adventurers (Levels 1-3). They often contain straightforward
                                     // puzzles, simple traps, and weaker monsters, making them accessible
                                     // for novice adventurers.
-    DCR_4_6("DCR 1-3"),             //   Intermediate-level dungeons designed for adventurers at Levels
-                                    // 4-6. These dungeons may feature more complex puzzles, moderate
-                                    // traps, and slightly tougher monsters. They offer a stepping stone
-                                    // for characters looking to challenge themselves further.
+    DCR_4_6("DCR 1-3"),             //   Intermediate-level dungeons designed for adventurers at
+                                    // Levels 4-6. These dungeons may feature more complex
+                                    // puzzles, moderate traps, and slightly tougher monsters.
+                                    // They offer a stepping stone for characters looking to
+                                    // challenge themselves further.
     DCR_7_9("DCR 1-3"),             //   Intermediate to advanced dungeons for adventurers at Levels 7-9.
                                     // These dungeons can include intricate puzzles, challenging traps, and
                                     // formidable monsters. They require a higher level of skill and
@@ -31,7 +32,7 @@ public enum DungeonChallengeRating {
 
     private final String dungeonChallengeRating;
 
-    DungeonChallengeRating(String dungeonChallengeRating) {
+    DungeonChallengeRatingEnum(String dungeonChallengeRating) {
         this.dungeonChallengeRating = dungeonChallengeRating;
     }
 

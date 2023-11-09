@@ -1,21 +1,19 @@
-import org.constants.DungeonSize;
-import org.constants.DungeonStatus;
+import org.constants.enums.DungeonSizeEnum;
+import org.constants.enums.DungeonStatusEnum;
 import org.models.Dungeon;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class Runner {
     public static void main(String[] args) {
         Dungeon smashHouse, iceCave, vampireCastle, pinkDisco;
 
-        smashHouse = new Dungeon("Smash House", DungeonSize.LARGE, DungeonStatus.OPEN);
-        iceCave = new Dungeon("Ice Cave", DungeonSize.MEDIUM, DungeonStatus.OPEN);
-        vampireCastle = new Dungeon("Van Stoker Caste", DungeonSize.EXTRA_LARGE, DungeonStatus.CLOSED);
-        pinkDisco = new Dungeon("Pink Disco", DungeonSize.MINI, DungeonStatus.RENOVATING);
+        smashHouse = new Dungeon("Smash House", DungeonSizeEnum.LARGE, DungeonStatusEnum.OPEN);
+        iceCave = new Dungeon("Ice Cave", DungeonSizeEnum.MEDIUM, DungeonStatusEnum.OPEN);
+        vampireCastle = new Dungeon("Van Stoker Caste", DungeonSizeEnum.EXTRA_LARGE, DungeonStatusEnum.CLOSED);
+        pinkDisco = new Dungeon("Pink Disco", DungeonSizeEnum.MINI, DungeonStatusEnum.RENOVATING);
 
         List<Dungeon> dungeons = new ArrayList<>(Arrays.asList(smashHouse,iceCave,vampireCastle, pinkDisco));
 

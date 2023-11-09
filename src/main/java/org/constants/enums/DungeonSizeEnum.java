@@ -1,6 +1,6 @@
-package org.constants;
+package org.constants.enums;
 
-public enum DungeonSize {
+public enum DungeonSizeEnum {
     MINI("mini"),                       //   1-3 rooms
     SMALL("small"),                     //   4-5 rooms
     MEDIUM("medium"),                   //   6-15 rooms
@@ -11,7 +11,7 @@ public enum DungeonSize {
 
     private final String size;
 
-    DungeonSize(String size) {
+    DungeonSizeEnum(String size) {
         this.size = size;
     }
 

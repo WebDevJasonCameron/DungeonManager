@@ -1,10 +1,9 @@
 package org.models;
 
-import org.constants.DungeonSize;
-import org.constants.DungeonStatus;
+import org.constants.enums.DungeonSizeEnum;
+import org.constants.enums.DungeonStatusEnum;
 
 import java.util.List;
-import java.util.Objects;
 
 public class Dungeon {
 
@@ -15,10 +14,10 @@ public class Dungeon {
     private String lore;            //   The history and background story of the Dungeon
     private String description;     //   Significant features that make it unique
     private String location;        //   In-game world or region where it is located
-    private DungeonSize size;
+    private DungeonSizeEnum size;
     private String creator;         //   Information about the game master or creator of the Dungeon
     private String entranceFee;     //   If applicable, the cost for adventurers to enter
-    private DungeonStatus status;
+    private DungeonStatusEnum status;
     private int challengeRating;    //   Difficulty or appeal to adventurers
     private int popularityRating;   //   Feedback & ratings provided by adventurers
     private int recommendedLevel;   //   Level or experience range for adventurers
@@ -39,13 +38,13 @@ public class Dungeon {
     // CONs
     public Dungeon(){}
 
-    public Dungeon(String name, DungeonSize size, DungeonStatus status) {
+    public Dungeon(String name, DungeonSizeEnum size, DungeonStatusEnum status) {
         this.name = name;
         this.size = size;
         this.status = status;
     }
 
-    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String lore, String description, String location, DungeonSizeEnum size, String creator, String entranceFee, DungeonStatusEnum status, int challengeRating, int popularityRating, int recommendedLevel, String source, Budget budget, List<Room> rooms, List<Staff> staff, List<Manager> managers, List<Owner> owners, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
@@ -88,7 +87,7 @@ public class Dungeon {
     public String getLocation() {
         return location;
     }
-    public DungeonSize getSize() {
+    public DungeonSizeEnum getSize() {
         return size;
     }
     public String getCreator() {
@@ -97,7 +96,7 @@ public class Dungeon {
     public String getEntranceFee() {
         return entranceFee;
     }
-    public DungeonStatus getStatus() {
+    public DungeonStatusEnum getStatus() {
         return status;
     }
     public int getChallengeRating() {
@@ -151,7 +150,7 @@ public class Dungeon {
     public void setLocation(String location) {
         this.location = location;
     }
-    public void setSize(DungeonSize size) {
+    public void setSize(DungeonSizeEnum size) {
         this.size = size;
     }
     public void setCreator(String creator) {
@@ -160,7 +159,7 @@ public class Dungeon {
     public void setEntranceFee(String entranceFee) {
         this.entranceFee = entranceFee;
     }
-    public void setStatus(DungeonStatus status) {
+    public void setStatus(DungeonStatusEnum status) {
         this.status = status;
     }
     public void setChallengeRating(int challengeRating) {
@@ -198,7 +197,7 @@ public class Dungeon {
 
     // METHs
     public boolean isOpen(){
-        return DungeonStatus.OPEN == this.status;
+        return DungeonStatusEnum.OPEN == this.status;
     }
 
 
