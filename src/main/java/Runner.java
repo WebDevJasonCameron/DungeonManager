@@ -22,7 +22,7 @@ public class Runner {
                                     DungeonStatus.OPEN,
                                     DungeonChallengeRating.DCR_1_3,
                                     DungeonPopularityRating.THREE_STARS);
-        vampireCastle = new Dungeon("Van Stoker Caste",
+        vampireCastle = new Dungeon("Van Stoker Castle",
                                     DungeonSize.EXTRA_LARGE,
                                     DungeonStatus.CLOSED,
                                     DungeonChallengeRating.DCR_4_6,
@@ -39,6 +39,7 @@ public class Runner {
         for (Dungeon dungeon : dungeons){
             System.out.println(dungeon.getName());
             System.out.println(dungeon.getPopularityRating());
+            System.out.println(dungeon.dprExplainer());
             System.out.println("\n------\n");
         }
     }

@@ -1,6 +1,7 @@
 package org.constants.explainers;
 
 import org.constants.enums.DungeonChallengeRating;
+import org.constants.enums.DungeonPopularityRating;
 import org.constants.enums.DungeonSize;
 
 public class DungeonExplainers {
@@ -82,6 +83,44 @@ public class DungeonExplainers {
             }
             default -> {
                 return "Unknown Dimensions";
+            }
+        }
+    }
+
+    public String popularityRating(DungeonPopularityRating dpr){
+        switch (dpr){
+            case ONE_STARS -> {
+                return """
+                        Poorly designed, confusing layout.
+                        Lack of interesting challenges or encounters.
+                        Boring or repetitive themes.""";
+            }
+            case TWO_STARS -> {
+                return """
+                        Average design with some flaws.
+                        Encounter balance issues.
+                        Story elements feel uninspired.""";
+            }
+            case THREE_STARS -> {
+                return """
+                        Well-designed layout with a good flow.
+                        Balanced challenges and encounters.
+                        Decent storytelling and thematic elements.""";
+            }
+            case FOUR_STARS -> {
+                return """
+                        Exceptional design and creativity.
+                        Engaging challenges with memorable moments.
+                        Immersive storytelling and thematic consistency.""";
+            }
+            case FIVE_STARS -> {
+                return """
+                        Flawless design, both visually and functionally.
+                        Ingenious and unique challenges and puzzles.
+                        Compelling narrative with memorable characters.
+                        Rewards that feel satisfying and earned.""";
+            }default -> {
+                return "Nothing Found";
             }
         }
     }

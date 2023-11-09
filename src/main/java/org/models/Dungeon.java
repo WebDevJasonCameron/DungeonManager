@@ -207,9 +207,13 @@ public class Dungeon {
 
 
     // <F> Explainers
-    public String dcrExplainer(){
-        DungeonExplainers dcrExplain = new DungeonExplainers();
-        return dcrExplain.challengeRating(this.challengeRating);
+    public String dcrExplainer(){                               //   dcr => Dungeon Challenge Rating
+        DungeonExplainers explain = new DungeonExplainers();
+        return explain.challengeRating(this.challengeRating);
+    }
+    public String dprExplainer(){                               //   dpr => Dungeon Popularity Rating
+        DungeonExplainers explain = new DungeonExplainers();
+        return explain.popularityRating(this.popularityRating);
     }
 
 
