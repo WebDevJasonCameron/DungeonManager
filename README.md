@@ -11,7 +11,7 @@ Hotel management with the fantasy elements of tabletop role-playing games (RPGs)
 
 - [ ] Manage Dungeon Rooms: Your dungeon rooms should be adventure-ready, similar to hotel rooms. Furnish them with traps, puzzles, and treasure, creating a unique experience in each chamber.
 
-- [ ] Hire Monsters: In Dungeon Manager, monsters will serve as your loyal staff, guarding the dungeon and challenging adventurers. Customize their roles and abilities to keep the guests entertained.
+- [ ] Hire Monsters: In Dungeon Manager, monsters will serve as your loyal employees, guarding the dungeon and challenging adventurers. Customize their roles and abilities to keep the guests entertained.
 
 - [ ] Welcome Adventurers: Adventures are your guests. They explore your dungeon, complete quests, and seek rewards. Provide them with a memorable and challenging experience, just like a hotel caters to its customers.
 

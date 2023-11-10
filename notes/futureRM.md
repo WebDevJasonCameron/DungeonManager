@@ -8,7 +8,7 @@ Dungeon Manager is a game dungeon management application that combines the princ
 
 2. Manage Dungeon Rooms: Your dungeon rooms become adventure-ready, similar to hotel rooms. Furnish them with traps, puzzles, and treasure, creating a unique experience in each chamber.
 
-3. Hire Monsters: In Dungeon Manager, monsters serve as your loyal staff, guarding the dungeon and challenging adventurers. Customize their roles and abilities to keep the guests entertained.
+3. Hire Monsters: In Dungeon Manager, monsters serve as your loyal employees, guarding the dungeon and challenging adventurers. Customize their roles and abilities to keep the guests entertained.
 
 4. Welcome Adventurers: Adventures are your guests. They explore your dungeon, complete quests, and seek rewards. Provide them with a memorable and challenging experience, just like a hotel caters to its customers.
 

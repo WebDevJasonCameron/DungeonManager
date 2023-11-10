@@ -12,7 +12,7 @@ public class CharacterSheet {
     private String creatureType;
     private int armorClass;
     private int hitPoints;
-    private double challengeRank;
+    private double challengeRating;
     private int xp;
     private int proficiencyBonus;
     private boolean multiAttack;
