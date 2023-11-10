@@ -1,6 +1,8 @@
 package org.models;
 
 import org.constants.classes.RoomDescription;
+import org.constants.enums.RoomFunctionalPurpose;
+import org.constants.enums.RoomType;
 
 import java.util.Dictionary;
 import java.util.List;
@@ -11,8 +13,8 @@ public class Room {
     private int id;
     private String designation;
     private String name;                //   If it has one
-    private String type;                //   <N> Hall, Room, Courtyard,
-    private String functionalPurpose;   //   Rest, study, murder
+    private RoomType type;
+    private RoomFunctionalPurpose functionalPurpose;
     private String storyPurpose;        //   i.e. build tension, provide clues of why such-and-such is going on
 
     private boolean timer;              //   Up-front-notice to DM if there is a time component to this room

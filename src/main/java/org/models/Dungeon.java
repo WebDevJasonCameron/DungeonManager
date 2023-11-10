@@ -32,7 +32,7 @@ public class Dungeon {
     private Budget budget;              //   <?> Cost and expenses of running a dungeon
 
     // LISTs
-    private Dictionary<String, Room> rooms;     //   i.e. {Ground floor : Room 1, Room Obj}
+    private Dictionary<String, Room> rooms;     //   i.e. {A-1 for Ground-floor & Room 1, Room Obj}
     private List<Employee> employees;   //   Employee that support the Dungeon
     private List<Manager> managers;     //   Middle management that manage the Employee
     private List<Owner> owners;         //   VIPs in charge of the overall business
