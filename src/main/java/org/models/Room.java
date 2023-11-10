@@ -7,18 +7,17 @@ import java.util.List;
 
 public class Room {
 
-    // VARs
+    // VARs                             //   Focusing on what the dm should know
     private int id;
     private String designation;
     private String name;                //   If it has one
     private String type;                //   <N> Hall, Room, Courtyard,
-    private String theme;
-    private String functionalPurpose;
-    private String storyPurpose;
+    private String functionalPurpose;   //   Rest, study, murder
+    private String storyPurpose;        //   i.e. build tension, provide clues of why such-and-such is going on
 
-    private boolean timer;
-    private int timeLimit;              //    Introduce time-sensitive elements to add urgency
-    private String dynamicChanges;      //    Allow for changes in the environment based on player actions
+    private boolean timer;              //   Up-front-notice to DM if there is a time component to this room
+    private String timeLimit;           //   How much time should be given (physical or turns)
+    private String dynamicChanges;      //   Allow for changes in the environment based on player actions
 
     // OBJs
     private RoomDescription description;

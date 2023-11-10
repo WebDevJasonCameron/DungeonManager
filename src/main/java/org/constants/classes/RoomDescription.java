@@ -4,7 +4,7 @@ import java.util.List;
 
 public class RoomDescription {
 
-    // VARs
+    // VARs                             //   Focusing on what the customers will experience
     // Physical
     private String shape;
     private double width;
