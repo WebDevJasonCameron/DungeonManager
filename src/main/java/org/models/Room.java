@@ -2,6 +2,7 @@ package org.models;
 
 import org.constants.classes.RoomDescription;
 
+import java.util.Dictionary;
 import java.util.List;
 
 public class Room {
@@ -10,9 +11,8 @@ public class Room {
     private int id;
     private String designation;
     private String name;                //   If it has one
-    private String type;
+    private String type;                //   <N> Hall, Room, Courtyard,
     private String theme;
-    private String visibility;          //   Can see from the current room & how it fits with the rest of
     private String functionalPurpose;
     private String storyPurpose;
 
@@ -23,13 +23,18 @@ public class Room {
     // OBJs
     private RoomDescription description;
 
+    // DICs
+    private Dictionary<String, String> descriptionText;         //   Subject : Description text
+    private Dictionary<String, String> boxText;                 //   Title : Description text
+    private Dictionary<String, Item> items;                     //   Title : Description text
+    private Dictionary<String, String> mapsAndPictures;         //   Title : URL
+
     // LISTs
     private List<Trap> traps;
     private List<Obstacle> obstacles;
     private List<Employee> employees;
-    private List<Manager> managers;
-    private List<Owner> owners;
-    private List<String> roomConnections;//   Consider how the room connects to adjacent areas
+
+
 
 
 
