@@ -15,7 +15,6 @@ public class Room {
     private String name;                //   If it has one
     private RoomType type;
     private RoomFunctionalPurpose functionalPurpose;
-    private String storyPurpose;        //   i.e. build tension, provide clues of why such-and-such is going on
 
     private boolean timer;              //   Up-front-notice to DM if there is a time component to this room
     private String timeLimit;           //   How much time should be given (physical or turns)
