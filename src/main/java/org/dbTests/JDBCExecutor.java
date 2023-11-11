@@ -18,12 +18,30 @@ public class JDBCExecutor {
 
         try{
             Connection connection = dcm.getConnection();
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM CUSTOMER");
+            CustomerDAO customerDAO = new CustomerDAO(connection);
 
-            while(resultSet.next()){
-                System.out.println(resultSet.getInt(1));
-            }
+            // Read a customer entry from the db
+            Customer customer = customerDAO.findById(1000);
+            System.out.println(customer.getFirstName() + " " + customer.getLastName());
+
+            // Used to create a new customer entry in the db
+            /**
+            Customer customer = new Customer();
+
+            customer.setFirstName("Capt");
+            customer.setLastName("Smash");
+            customer.setEmail("smash@gmail.com");
+            customer.setPhone("(555) 555-1234");
+            customer.setAddress("1234 Main st");
+            customer.setCity("San Antonio");
+            customer.setState("TX");
+            customer.setZipCode("12345");
+
+            customerDAO.create(customer);
+            */
+
+
+
         } catch (SQLException e) {e.printStackTrace();
         }
     }
