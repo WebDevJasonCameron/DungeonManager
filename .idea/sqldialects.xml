@@ -6,6 +6,6 @@
     <file url="file://$PROJECT_DIR$/db/SQL-Scripts/orders.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/db/SQL-Scripts/product.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/db/SQL-Scripts/salesperson.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/services/JDBCExecutor.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dbTests/JDBCExecutor.java" dialect="PostgreSQL" />
   </component>
 </project>

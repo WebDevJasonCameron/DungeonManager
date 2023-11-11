@@ -1,4 +1,4 @@
-package org.services;
+package org.dbTests;
 
 import org.constants.keys.Keys;
 

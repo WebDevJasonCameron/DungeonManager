@@ -1,4 +1,4 @@
-package org.services;
+package org.dbTests;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
