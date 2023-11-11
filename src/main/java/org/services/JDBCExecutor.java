@@ -2,8 +2,6 @@ package org.services;
 
 import org.constants.keys.Keys;
 
-import javax.xml.crypto.Data;
-import java.net.ConnectException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
