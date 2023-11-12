@@ -20,9 +20,20 @@ public class JDBCExecutor {
             Connection connection = dcm.getConnection();
             CustomerDAO customerDAO = new CustomerDAO(connection);
 
+            // Update a customer entry in db
+            Customer customer = customerDAO.findById(10000);
+            System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
+            customer.setEmail("cSmash@gmail.com");
+            customer = customerDAO.update(customer);
+            System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
+
+
             // Read a customer entry from the db
+            /**
             Customer customer = customerDAO.findById(1000);
             System.out.println(customer.getFirstName() + " " + customer.getLastName());
+            */
+
 
             // Used to create a new customer entry in the db
             /**
