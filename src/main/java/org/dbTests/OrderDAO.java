@@ -15,15 +15,15 @@ public class OrderDAO extends DataAccessObject<Order> {
     private final static String GET_BY_ID = "SELECT " +
                                                 "c.first_name, c.last_name, c.email, " +
                                                 "o.order_id, o.creation_date, o.total_due, o.status, " +
-                                                "s.first_name, s.last_name, s.email" +
+                                                "s.first_name, s.last_name, s.email, " +
                                                 "ol.quantity," +
-                                                "p.code, p.name, p.size, p.variety, p.price" +
-                                            "FROM orders o" +
-                                                "JOIN customer c ON o.customer_id = cc.customer_id" +
-                                                "JOIN salesperson s ON o.salesperson_id = s.salesperson_id" +
-                                                "JOIN order_idem ol ON ol.order_id = o.order_id" +
-                                                "JOIN product p ON ol.product_id = p.product_id" +
-                                            "WHERE o.order_id = ?";
+                                                "p.code, p.name, p.size, p.variety, p.price " +
+                                            "FROM orders o " +
+                                                "JOIN customer c ON o.customer_id = c.customer_id " +
+                                                "JOIN salesperson s ON o.salesperson_id = s.salesperson_id " +
+                                                "JOIN order_item ol ON ol.order_id = o.order_id " +
+                                                "JOIN product p ON ol.product_id = p.product_id " +
+                                            "WHERE o.order_id = ? ";
 
 
     // CONs
@@ -66,12 +66,12 @@ public class OrderDAO extends DataAccessObject<Order> {
 
                  orderLines.add(orderLine);
              }
+             order.setOrderLine(orderLines);
 
          } catch (SQLException e) {
              e.printStackTrace();
              throw new RuntimeException();
          }
-
          return order;
     }
 

@@ -11,17 +11,22 @@ public class JDBCExecutor {
 
     public static void main(String[] args) {
 
-        Keys keys = new Keys();
+        Keys keys = new Keys();                                             //   Keeps my keys secure
         String password = keys.jdbcPassword();
 
         DatabaseConnectionManager dcm = new DatabaseConnectionManager("localhost", "postgres", "postgres", password);
 
         try{
             Connection connection = dcm.getConnection();
-            CustomerDAO customerDAO = new CustomerDAO(connection);
+            //CustomerDAO customerDAO = new CustomerDAO(connection);          //   Used for customers
+            OrderDAO orderDAO = new OrderDAO(connection);                   //   Used for orders
+
+            Order order = orderDAO.findById(500);
+            System.out.println(order);
+
 
             // Delete a customer from db
-
+            /**
             // First adding customer to db
             Customer customer = new Customer();
             customer.setFirstName("John");
@@ -46,7 +51,7 @@ public class JDBCExecutor {
             String deletedCustomerName = dbCustomer.getFirstName() + " " + dbCustomer.getLastName();
             customerDAO.delete(dbCustomer.getId());
             System.out.println("Deleted: " + deletedCustomerName);
-
+`           */
 
             // Update a customer entry in db
             /**
