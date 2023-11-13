@@ -20,12 +20,42 @@ public class JDBCExecutor {
             Connection connection = dcm.getConnection();
             CustomerDAO customerDAO = new CustomerDAO(connection);
 
+            // Delete a customer from db
+
+            // First adding customer to db
+            Customer customer = new Customer();
+            customer.setFirstName("John");
+            customer.setLastName("Adams");
+            customer.setEmail("jadams@wh.com");
+            customer.setPhone("(555) 555-9876");
+            customer.setAddress("1234 Main st");
+            customer.setCity("Arlington");
+            customer.setState("VA");
+            customer.setZipCode("12345");
+
+            Customer dbCustomer = customerDAO.create(customer);
+            dbCustomer = customerDAO.findById(dbCustomer.getId());
+            System.out.println(dbCustomer);
+
+            // Updating
+            dbCustomer.setEmail("johnAdams@mail.gov");
+            dbCustomer = customerDAO.update(dbCustomer);
+            System.out.println(dbCustomer);
+
+            // Deleting
+            String deletedCustomerName = dbCustomer.getFirstName() + " " + dbCustomer.getLastName();
+            customerDAO.delete(dbCustomer.getId());
+            System.out.println("Deleted: " + deletedCustomerName);
+
+
             // Update a customer entry in db
+            /**
             Customer customer = customerDAO.findById(10000);
             System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
             customer.setEmail("cSmash@gmail.com");
             customer = customerDAO.update(customer);
             System.out.println(customer.getFirstName() + " " + customer.getLastName() + " " + customer.getEmail());
+            */
 
 
             // Read a customer entry from the db
