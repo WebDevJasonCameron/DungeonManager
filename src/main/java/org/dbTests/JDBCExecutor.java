@@ -3,9 +3,7 @@ package org.dbTests;
 import org.constants.keys.Keys;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class JDBCExecutor {
 
@@ -18,7 +16,7 @@ public class JDBCExecutor {
 
         try{
             Connection connection = dcm.getConnection();
-            //CustomerDAO customerDAO = new CustomerDAO(connection);          //   Used for customers
+            //CustomerDAO customerDAO = new CustomerDAO(connection);        //   Used for customers
             OrderDAO orderDAO = new OrderDAO(connection);                   //   Used for orders
 
             Order order = orderDAO.findById(500);

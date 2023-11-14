@@ -32,7 +32,7 @@ public class Order implements DataTransferObject {
     public void setCustomerFirstName(String customerFirstName) {
         this.customerFirstName = customerFirstName;
     }
-    public String getCustomerLastName() {
+    public String setCustomerLastLane(String string) {
         return customerLastName;
     }
     public void setCustomerLastName(String customerLastName) {
