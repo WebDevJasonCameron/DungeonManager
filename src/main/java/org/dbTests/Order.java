@@ -19,7 +19,7 @@ public class Order implements DataTransferObject {
     private String salespersonFirstName;
     private String salespersonLastName;
     private String salespersonEmail;
-    private List<OrderLine> orderLine;
+    private List<OrderLine> orderLines;
 
 
     // GETs & SETs
@@ -74,11 +74,11 @@ public class Order implements DataTransferObject {
     public void setSalespersonEmail(String salespersonEmail) {
         this.salespersonEmail = salespersonEmail;
     }
-    public List<OrderLine> getOrderLine() {
-        return orderLine;
+    public List<OrderLine> getOrderLines() {
+        return orderLines;
     }
-    public void setOrderLine(List<OrderLine> orderLine) {
-        this.orderLine = orderLine;
+    public void setOrderLines(List<OrderLine> orderLines) {
+        this.orderLines = orderLines;
     }
     public Date getCreationDate() {
         return creationDate;
@@ -106,7 +106,7 @@ public class Order implements DataTransferObject {
                 ", salespersonFirstName='" + salespersonFirstName + '\'' +
                 ", salespersonLastName='" + salespersonLastName + '\'' +
                 ", salespersonEmail='" + salespersonEmail + '\'' +
-                ", orderLine=" + orderLine +
+                ", orderLines=" + orderLines +
                 '}';
     }
 }
