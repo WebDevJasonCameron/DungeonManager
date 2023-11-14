@@ -4,6 +4,7 @@ import org.constants.keys.Keys;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 public class JDBCExecutor {
 
@@ -16,11 +17,19 @@ public class JDBCExecutor {
 
         try{
             Connection connection = dcm.getConnection();
-            //CustomerDAO customerDAO = new CustomerDAO(connection);        //   Used for customers
-            OrderDAO orderDAO = new OrderDAO(connection);
+            CustomerDAO customerDAO = new CustomerDAO(connection);        //   Used for customers
+            OrderDAO orderDAO = new OrderDAO(connection);                 //   Used for orders
+
+            List<Order> orders = orderDAO.getOrdersForCustomer(789);
+            orders.forEach(System.out::println);
+
+
+
+            // Reading complex order search with joins
+            /**
             Order order = orderDAO.findById(1000);
             System.out.println(order);
-
+            */
 
             // Delete a customer from db
             /**
