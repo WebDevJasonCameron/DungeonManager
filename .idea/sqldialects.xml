@@ -7,6 +7,6 @@
     <file url="file://$PROJECT_DIR$/db/SQL-Scripts/product.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/db/SQL-Scripts/salesperson.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/src/main/java/org/dbTests/CustomerDAO.java" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/src/main/java/org/dbTests/JDBCExecutor.java" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/org/dbTests/executors/JDBCExecutor_01.java" dialect="PostgreSQL" />
   </component>
 </project>

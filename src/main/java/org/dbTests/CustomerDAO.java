@@ -6,11 +6,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class CustomerDAO extends DataAccessObject<Customer> {
 
-    // METHs
+    // VARs
     private static final String INSERT = "INSERT INTO customer (first_name, last_name, email, phone, address, city, state, zipcode) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
     private static final String GET_ONE = "SELECT customer_id, first_name, last_name, email, phone, address, city, state, zipcode FROM customer WHERE customer_id=?";
@@ -19,12 +20,16 @@ public class CustomerDAO extends DataAccessObject<Customer> {
 
     private static final String DELETE = "DELETE FROM customer WHERE customer_id = ?";
 
+    private static final String GET_ALL_LMT = "SELECT customer_id, first_name, last_name, email, phone, " +
+            "address, city, state, zipcode FROM customer ORDER BY last_name, first_name LIMIT ?";
+
+
     // CONs
     public CustomerDAO(Connection connection) {
         super(connection);
     }
 
-    // EXs
+    // OVRs
     @Override
     public Customer findById(long id) {
         Customer customer = new Customer();
@@ -109,4 +114,36 @@ public class CustomerDAO extends DataAccessObject<Customer> {
             throw new RuntimeException(e);
         }
     }
+
+    // METHs
+    public List<Customer> findAllSorted(int limit) {
+        List<Customer> customers = new ArrayList<>();
+        try(PreparedStatement statement = this.connection.prepareStatement(GET_ALL_LMT);){
+            statement.setInt(1, limit);
+            ResultSet rs = statement.executeQuery();
+
+            while(rs.next()){
+                Customer customer = new Customer();
+                customer.setId(rs.getLong("customer_id"));
+                customer.setFirstName(rs.getString("first_name"));
+                customer.setLastName(rs.getString("last_name"));
+                customer.setEmail(rs.getString("email"));
+                customer.setPhone(rs.getString("phone"));
+                customer.setAddress(rs.getString("address"));
+                customer.setCity(rs.getString("city"));
+                customer.setState(rs.getString("state"));
+                customer.setZipCode(rs.getString("zipcode"));
+
+                customers.add(customer);
+            }
+
+        }catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException();
+        }
+        return customers;
+    }
+
+
+
 }

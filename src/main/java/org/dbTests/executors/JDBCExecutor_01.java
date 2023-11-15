@@ -1,12 +1,16 @@
-package org.dbTests;
+package org.dbTests.executors;
 
 import org.constants.keys.Keys;
+import org.dbTests.CustomerDAO;
+import org.dbTests.DatabaseConnectionManager;
+import org.dbTests.Order;
+import org.dbTests.OrderDAO;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-public class JDBCExecutor {
+public class JDBCExecutor_01 {
 
     public static void main(String[] args) {
 
@@ -20,9 +24,15 @@ public class JDBCExecutor {
             CustomerDAO customerDAO = new CustomerDAO(connection);        //   Used for customers
             OrderDAO orderDAO = new OrderDAO(connection);                 //   Used for orders
 
+            // finding customers with a limit
+            customerDAO.findAllSorted(20).forEach(System.out::println);
+
+
+            // Getting orders using the customer table with join sql meths
+            /**
             List<Order> orders = orderDAO.getOrdersForCustomer(789);
             orders.forEach(System.out::println);
-
+            */
 
 
             // Reading complex order search with joins
