@@ -57,7 +57,7 @@ public class JDBCExecutor {
             String deletedCustomerName = dbCustomer.getFirstName() + " " + dbCustomer.getLastName();
             customerDAO.delete(dbCustomer.getId());
             System.out.println("Deleted: " + deletedCustomerName);
-`           */
+            */
 
             // Update a customer entry in db
             /**
