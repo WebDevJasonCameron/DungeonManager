@@ -22,8 +22,14 @@ public class JDBCExecutor_07 {
             CustomerDAO customerDAO = new CustomerDAO(connection);        //   Used for customers
             OrderDAO orderDAO = new OrderDAO(connection);                 //   Used for orders
 
+            // finding customers with a limit and Paged
+            //customerDAO.findAllSorted(20).forEach(System.out::println);
+            System.out.println("Paged");
+            for (int i = 1; i < 3; i++) {
+                System.out.println("Page number: " + i);
+                customerDAO.findAllPaged(10, i).forEach(System.out::println);
 
-
+            }
 
         } catch (SQLException e) {e.printStackTrace();
         }
