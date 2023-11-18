@@ -34,8 +34,6 @@ public class Dungeon {
     // LISTs
     private Dictionary<String, Room> rooms;     //   i.e. {A-1 for Ground-floor & Room 1, Room Obj}
     private List<Employee> employees;   //   Employee that support the Dungeon
-    private List<Manager> managers;     //   Middle management that manage the Employee
-    private List<Owner> owners;         //   VIPs in charge of the overall business
     private List<Event> events;         //   Conferences <!> Add later
 
     // ===========================================================
@@ -51,7 +49,7 @@ public class Dungeon {
         this.popularityRating = popularityRating;
     }
 
-    public Dungeon(int id, String name, String theme, String type, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, DungeonChallengeRating challengeRating, DungeonPopularityRating popularityRating, String source, Budget budget, Dictionary<String, Room> rooms, List<Employee> employees, List<Manager> managers, List<Owner> owners, List<Event> events) {
+    public Dungeon(int id, String name, String theme, String type, String lore, String description, String location, DungeonSize size, String creator, String entranceFee, DungeonStatus status, DungeonChallengeRating challengeRating, DungeonPopularityRating popularityRating, String source, Budget budget, Dictionary<String, Room> rooms, List<Employee> employees, List<Event> events) {
         this.id = id;
         this.name = name;
         this.theme = theme;
@@ -69,8 +67,6 @@ public class Dungeon {
         this.budget = budget;
         this.rooms = rooms;
         this.employees = employees;
-        this.managers = managers;
-        this.owners = owners;
         this.events = events;
     }
 
@@ -126,12 +122,6 @@ public class Dungeon {
     }
     public List<Employee> getEmployees() {
         return employees;
-    }
-    public List<Manager> getManagers() {
-        return managers;
-    }
-    public List<Owner> getOwners() {
-        return owners;
     }
     public List<Event> getEvents() {
         return events;
@@ -189,12 +179,6 @@ public class Dungeon {
     }
     public void setEmployees(List<Employee> employees) {
         this.employees = employees;
-    }
-    public void setManagers(List<Manager> managers) {
-        this.managers = managers;
-    }
-    public void setOwners(List<Owner> owners) {
-        this.owners = owners;
     }
     public void setEvents(List<Event> events) {
         this.events = events;

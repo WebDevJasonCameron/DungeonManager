@@ -1,10 +1,9 @@
-CREATE DATABASE dungeonmanager;
-GRANT ALL PRIVILEGES ON DATABASE dungeonmanager TO postgres;
-
+CREATE DATABASE dungeon_manager;
+GRANT ALL PRIVILEGES ON DATABASE dungeon_manager TO postgres;
 
 DROP TABLE IF EXISTS dungeons;
 DROP TABLE IF EXISTS rooms;
 DROP TABLE IF EXISTS employees;
 DROP TABLE IF EXISTS customers;
 
-DROP DATABASE IF EXISTS dungeonmanager;
+DROP DATABASE IF EXISTS dungeon_manager;
