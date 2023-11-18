@@ -26,4 +26,4 @@ ALTER SEQUENCE dungeon_seq OWNED BY dungeons.dungeon_id;
 
 INSERT INTO dungeons (dungeon_id, name, theme, type, lore, description, location, size, creator, entrance_fee, status, challenge_rating, popularity_rating, source)
 VALUES
-(1, 'TEST DUNGEON', 'TEST THEME', 'TEST TYPE', 'TEST LORE', 'TEST DESCRIPTION', 'TEST LOCATION', 'SMALL', 'SMASH', '00.00', 'CLOSED', 'TEST CHALLENGE RATING', 'TEST POPULARITY RATING', 'TEST SOURCE');
+(0, 'TEST DUNGEON', 'TEST THEME', 'TEST TYPE', 'TEST LORE', 'TEST DESCRIPTION', 'TEST LOCATION', 'SMALL', 'SMASH', '00.00', 'CLOSED', 'TEST CHALLENGE RATING', 'TEST POPULARITY RATING', 'TEST SOURCE');
